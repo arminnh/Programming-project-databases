@@ -1,5 +1,8 @@
 # learn2program
 
+A website toaid students in the understanding of several concepts seen in machines and computability, mote specifically Context Free Grammars, Turing Machines and Universal Turing Machines.  
+The tools were written in C++ as part of a Machines and Computability course at the [University of Antwerp](https://www.uantwerpen.be/popup/opleidingsonderdeel.aspx?catalognr=1001WETCGR&taal=en&aj=2014).<br>
+
 ## Installation
 This installation presumes an up-to-date linux system (14.04) & all necessary packages have been installed.
 Following packages are needed:
