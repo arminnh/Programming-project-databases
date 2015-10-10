@@ -1,7 +1,7 @@
 # Learn2Program
 
-A website that will help people lean to program.
-Learn2program was made as part of a [programming project databases](https://www.uantwerpen.be/popup/opleidingsonderdeel.aspx?catalognr=1002WETDAT&taal=en&aj=2014) course at the University of Antwerp.<br>
+A website that will help people to learn to program.  
+Learn2program was made as part of a [programming project databases](https://www.uantwerpen.be/popup/opleidingsonderdeel.aspx?catalognr=1002WETDAT&taal=en&aj=2014) course at the University of Antwerp.  
 Learn2program was written using PHP, [Laravel](http://laravel.com/), HTML5, CSS3 and JavaScript.
 
 ![homepage](verslagen/homepage.png)
@@ -71,5 +71,5 @@ Run php artisan for more interesting commands.
 ## Authors
 [Armin Halilovic](https://github.com/arminnh)  
 [Bruno de Deken](https://github.com/brunodd)  
-Raphael Assa
+Raphael Assa  
 [Fouad Kichauat](https://github.com/Fouad-Kichauat)  
