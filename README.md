@@ -1,10 +1,10 @@
-# learn2program
+# Learn2Program
 
 A website that will help people lean to program.
 Learn2program was made as part of a [programming project databases](https://www.uantwerpen.be/popup/opleidingsonderdeel.aspx?catalognr=1002WETDAT&taal=en&aj=2014) course at the University of Antwerp.<br>
 Learn2program was written using PHP, [Laravel](http://laravel.com/), HTML5, CSS3 and JavaScript.
 
-Image here
+![homepage](verslagen/homepage.png)
 
 ## Installation
 #### Required packages
@@ -32,7 +32,7 @@ $ composer update
 $ composer install
 ~~~
 
-Run the installer script in install/
+Run the install script
 
 ~~~sh
 $ cd install/
@@ -48,6 +48,7 @@ $ php artisan serve
 ~~~
 
 The website is now accessible at http://localhost:8000/
+
 
 #####Optional: Custom URL & port
 Add the following entry to /etc/hosts
@@ -68,3 +69,7 @@ $ php artisan route:list
 Run php artisan for more interesting commands.
 
 ## Authors
+[Armin Halilovic](https://github.com/arminnh)  
+[Bruno de Deken](https://github.com/brunodd)  
+Raphael Assa
+[Fouad Kichauat](https://github.com/Fouad-Kichauat)  
