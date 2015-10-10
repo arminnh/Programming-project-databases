@@ -1,0 +1,141 @@
+.container {
+    padding: 15px 15px 0;
+    width: 90%;
+    background: #ededed;
+    margin-bottom: 15px;
+}
+
+.h44 {
+    width: 15%;
+    color: white;
+    margin: 0 0 10px 0;
+    border-radius: 50px;
+    float: left;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px;
+    background-color: #3B8686;
+    height: 50px;
+}
+
+.h55 {
+    width: 50%;
+    margin: 10px auto;
+    padding: 15px;
+    color: white;
+    background: #222222;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+}
+
+.options {
+    width: 80%;
+    float: right;
+    font-size: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: whitesmoke;
+}
+
+.options button {
+    width: 18.3%;
+    margin: 10px 0.85%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    background: #EBEBEB;
+}
+
+.ttr button {
+    margin: 10px 0;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    background: #EBEBEB;
+    width: calc(25% - 3px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.options button:hover, .ttr button:hover {
+    color: white;
+    background: #5e5e5e;
+}
+
+.series {
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 15px;
+    background: whitesmoke;
+}
+
+.series .ttr {
+    min-height: 45px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 15px;
+    display: none;
+    color: black;
+    font-size: 14px;
+    background: #EBEBEB;
+}
+
+.ttr span {
+    font-size: 0.8em;
+    display: none;
+}
+
+.series .ttr:hover {
+    cursor: pointer;
+    background: #99cfe0;
+}
+
+.series .ttd {
+    display: inline-block;
+    width: calc(25% - 3px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.series .dd {
+    text-align: right;
+}
+
+#name1, #name2, #title1, #title2, #score1, #score2 {
+    text-align: left;
+}
+
+#name1 span, #name2 span, #title1 span, #title2 span, #score1 span, #score2 span, #question1 span, #question2 span, #author1 span, #author2 span, #titlee1 span, #titlee2 span {
+    position: relative;
+    top: 5px;
+    width: 12px;
+    height: 13px;
+    float: right;
+}
+
+#tr1 {
+    display: block;
+    font-weight: bold;
+    background: #CCCCCC;
+}
+
+#tr1:hover {
+    cursor: default;
+}
+
+.mix {
+    display: none;
+}
+
+/*# sourceMappingURL=sortingAndFiltering.css.map */
