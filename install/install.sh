@@ -19,8 +19,8 @@ then
 
 		# Configure app/config/database.php
 		echo "### SETTING UP DATABASE ###"
-		read -p "Database username: " username
-		read -p "Database password: " password
+		read -p "mysql username: " username
+		read -p "mysql password: " password
 
 		sed -i.bak 's/DB_USERNAME=root/DB_USERNAME='$username'/g' '../htdocs/.env'
 		sed -i.bak 's/DB_PASSWORD=/DB_PASSWORD='$password'/g' '../htdocs/.env'
@@ -35,8 +35,8 @@ then
 
 		# Configure app/config/database.php
 		echo "### SETTING UP DATABASE ###"
-		read -p "Database username: " username
-		read -p "Database password: " password
+		read -p "mysql username: " username
+		read -p "mysql password: " password
 
 		sed -i.bak 's/DB_USERNAME=root/DB_USERNAME='$username'/g' '../htdocs/.env'
 		sed -i.bak 's/DB_PASSWORD=/DB_PASSWORD='$password'/g' '../htdocs/.env'
@@ -47,15 +47,15 @@ then
 		php ../htdocs/artisan db:seed
 	else
 		echo "usage: install.sh [flag]"
-		echo "Flags:"
-		echo "\t-all -> Initialize and seed the database"
-		echo "\t-init -> initialize the database"
-		echo "\t-seed -> seed the database"
+		echo "flags:"
+		echo "    -all  -> Initialize and seed the database"
+		echo "    -init -> initialize the database"
+		echo "    -seed -> seed the database"
 	fi
 else
 	echo "usage: install.sh [flag]"
-	echo "Flags:"
-	echo "\t-all -> Initialize and seed the database"
-	echo "\t-init -> initialize the database"
-	echo "\t-seed -> seed the database"
+	echo "flags:"
+	echo "    -all  -> Initialize and seed the database"
+	echo "    -init -> initialize the database"
+	echo "    -seed -> seed the database"
 fi
