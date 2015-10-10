@@ -1,92 +1,70 @@
 # learn2program
 
+A website that will help people lean to program.
+Learn2program was made as part of a [programming project databases](https://www.uantwerpen.be/popup/opleidingsonderdeel.aspx?catalognr=1002WETDAT&taal=en&aj=2014) course at the University of Antwerp.<br>
+Learn2program was written using PHP, [Laravel](http://laravel.com/), HTML5, CSS3 and JavaScript.
+
+Image here
+
 ## Installation
-This installation presumes an up-to-date linux system (14.04) & all necessary packages have been installed.
-Following packages are needed:
+#### Required packages
 
-- php 5.5 (or later)
-
-~~~sh
-$ sudo apt-get install php5-cli
-~~~
-
-- curl
-
-~~~sh
-$ sudo apt-get install curl php5-curl
-~~~
-
+- mysql-server
 - composer
+- mcrypt
+- php5-cli
+- php5-curl
+- php5-mysql
+- php5-mcrypt
 
-~~~sh
-$ curl -sS https://getcomposer.org/installer | php
-$ sudo mv composer.phar /usr/local/bin/composer
+#### Install
+
+Enable mcrypt
 ~~~
-
-- MySQL + mycrypt
-
-~~~sh
-$ sudo apt-get install mysql-server php5-mysql
-$ sudo apt-get install mcrypt php5-mcrypt
 $ sudo php5enmod mcrypt
-$ sudo service mysql restart
 ~~~
 
-Before running the installer, the MySQL database server must be running.
-
-To install the application, navigate to /htdocs/
-and run composer install:
-
-[Note: sudo rights may be required]
+Install the php dependencies  (sudo rights may be required)
 
 ~~~sh
 $ cd htdocs/
+$ composer update
 $ composer install
 ~~~
 
-[Note: If you are promted by github, you must generate a token & copy it into the terminal. The token will be invisible so mind to only paste it once. Instructions on how to generate a token can be found [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).]
-
-Navigate to the install/ directory and run the installer:
+Run the installer script in install/
 
 ~~~sh
-$ cd ../install/
-$ ./install.sh [-all | -seed | -init]
+$ cd install/
+$ ./install.sh -all   (or -init or -seed)
 ~~~
-
-and return
-
-~~~sh
-$ cd ../
-~~~
-
 This will initialize the database and seed it with some default entries.
 
-To run the application, navigate to htdocs/ directory:
+#### Run
 
 ~~~sh
 $ cd htdocs/
 $ php artisan serve
 ~~~
 
-By default, the website is now accessible via http://localhost:8000/
+The website is now accessible at http://localhost:8000/
 
-###[Optional: Custom URL & port]
-
+#####Optional: Custom URL & port
+Add the following entry to /etc/hosts
+~~~
+127.0.0.1		learn2program.dev	www.learn2program.dev
+~~~
+Then run
 ~~~sh
 $ sudo php artisan serve --host=learn2program.dev --port=80
 ~~~
 
-Adjust /etc/hosts using the following entry
-
-~~~
-127.0.0.1		learn2program.dev	www.learn2program.dev
-~~~
-
-Accessible via http://www.learn2program.dev
 
 ##Routes
-Om te zien welke routes beschikbaar zijn, gebruik commando vanuit htdocs/:
-
+To see the list of routes
 ~~~sh
 $ php artisan route:list
 ~~~
+Run php artisan for more interesting commands.
+
+## Authors
